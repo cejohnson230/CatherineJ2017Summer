@@ -1,20 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@android:color/black"-->
+    <!--android:orientation="horizontal"-->
+    <!--tools:context="com.example.catherinejohnson.catherinej2017summer.MainActivity">-->
+
+    <!--<View-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@android:color/holo_blue_bright"-->
+        <!--android:layout_weight="1"></View>-->
+
+    <!--<View-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:background="@android:color/holo_orange_light"-->
+        <!--android:layout_weight="1"></View>-->
+
+    <!--<View-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:background="@android:color/white"-->
+        <!--android:layout_weight="1"></View>-->
+
+<!--THIS IS AN EXAMPLE OF A 3 COLOUMN LINEAR LAYOUT -->
+<!--</LinearLayout>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
+    android:orientation="horizontal"
     tools:context="com.example.catherinejohnson.catherinej2017summer.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!--top title bar with two buttons inside and the App Name-->
+    <!--when naming id's, use unique name, so naming comnvention is xml title and then object-->
+    <RelativeLayout
+        android:id="@+id/activity_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_blue_bright">
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+        <!--left side button-->
+        <Button
+            android:text="T"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bt_bg"/>
+
+        <!--right side button-->
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bt_icon_bg"
+            android:onClick="login"/>
+
+        </RelativeLayout>
+
+
+
+<!--bottom title bar with 2 text views acting as "buttons"-->
+    <LinearLayout
+        android:id="@+id/activity_main_tool"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/activity_tool_lft"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Demo"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.02"
+            android:background="@android:color/darker_gray"></View>
+
+        <TextView
+            android:id="@+id/activity_tool_rht"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Work"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+ <!--list view between title and tool bar-->
+ <!--by naming the tool and title bar id's, we can reference them
+ in layout above and below on where the list view will be-->
+    <LinearLayout
+        android:id="@+id/activity_main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_main_title"
+        android:layout_above="@id/activity_main_tool"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</RelativeLayout>

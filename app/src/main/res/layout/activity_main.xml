@@ -124,13 +124,13 @@
  <!--by naming the tool and title bar id's, we can reference them
  in layout above and below on where the list view will be-->
     <LinearLayout
+        android:orientation="vertical"
         android:id="@+id/activity_main_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/activity_main_title"
         android:layout_above="@id/activity_main_tool"
-        android:background="@android:color/darker_gray"
-        android:orientation="vertical">
+        android:background="@android:color/darker_gray">
 
     </LinearLayout>
 

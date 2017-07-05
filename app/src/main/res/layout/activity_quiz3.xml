@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.catherinejohnson.catherinej2017summer.Quiz3">
+    <!-- TODO: Update blank fragment layout -->
+    <!--<TextView-->
+    <!--android:layout_marginTop="60sp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:text="@string/hello_blank_fragment" />-->
+    <TextView
+        android:id="@+id/activity_work_top_tv"
+        android:layout_width="match_parent"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:hint="This fragment"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <!--Quiz 1 Button Left Side-->
+    <LinearLayout
+        android:id="@+id/activity_work_tool"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:layout_alignParentTop="true">
+
+
+        <Button
+            android:id="@+id/activity_quiz3_quiz1bt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#F8F8F8"
+            android:text="Quiz 1"
+            android:gravity="center"
+            android:textStyle="bold"
+
+            android:textColor="@android:color/darker_gray"/>
+
+
+        <Button
+            android:id="@+id/activity_quiz3_quiz2bt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#F8F8F8"
+            android:text="Quiz 2"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"/>
+
+        <Button
+            android:id="@+id/activity_quiz3_quiz3bt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#F8F8F8"
+            android:text="Quiz 3"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"/>
+
+
+    </LinearLayout>
+
+    <!--Submit Button-->
+    <Button
+        android:id="@+id/activity_work_bt_submit"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Submit" />
+</LinearLayout>

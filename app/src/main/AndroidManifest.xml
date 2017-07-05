@@ -20,8 +20,33 @@
         <!-- <activity android:name=".NewActivity" /> -->
         <!-- <activity android:name=".Main2Activity"></activity> -->
         <activity android:name=".ViewPagerActivity" />
-        <activity android:name=".LaunchModeActivity"
-            android:launchMode="singleInstance"></activity>
+        <activity
+            android:name=".ActivityA"
+            android:launchMode="singleInstance" />
+        <activity android:name=".ScaleTypeActivity" />
+        <activity android:name=".NinePatch" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".AdvanceActivity" />
+        <activity android:name=".AdvancedViewPager" />
+        <activity android:name=".AdvancedViewPagerActivity" />
+        <activity android:name=".dialog.CustomDialog" />
+        <activity android:name=".ActivityB" />
+        <activity android:name=".ActivityC" />
+        <activity android:name=".ActivityD" />
+        <activity android:name=".AnimationActivity" />
+        <activity android:name=".AnimatorActivity" />
+        <activity android:name=".CheckBoxActivity" />
+        <activity android:name=".DialogActivity" />
+        <activity android:name=".GestureActivity" />
+        <activity android:name=".HandlerActivity" />
+        <activity android:name=".Quiz3" />
+        <activity android:name=".RadioGroupActivity" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".ResultActivity2" />
+        <activity android:name=".ResultActivity1" />
+        <activity android:name=".RunableHandlerActivity" />
+        <activity android:name=".SharedPreferenceActivity" />
+        <activity android:name=".AdvancedListViewActivity"></activity>
     </application>
 
 </manifest> <!-- Intent filter shows which activity is the flow of activities -->
